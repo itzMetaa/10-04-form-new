@@ -49,19 +49,24 @@ namespace _10_04_New
         private void numericUpDown3_ValueChanged(object sender, EventArgs e)
         {
             red = (int)numericUpDown3.Value;
-            label4.BackColor = Color.FromArgb(red,green,blue);
+            button1.BackColor = Color.FromArgb(red,green,blue);
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             green = (int)numericUpDown3.Value;
-            label4.BackColor = Color.FromArgb(red, green, blue);
+            button1.BackColor = Color.FromArgb(red, green, blue);
         }
 
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
             blue = (int)numericUpDown3.Value;
-            label4.BackColor = Color.FromArgb(red, green, blue);
+            button1.BackColor = Color.FromArgb(red, green, blue);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }
