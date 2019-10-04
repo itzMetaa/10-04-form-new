@@ -24,12 +24,22 @@ namespace _10_04_New
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            this.timer1.Start();
+            //label_kiir.Text = "Hello " + text_szoveg.Text;
         }
 
         private void rich(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.progressBar1.Increment(1);
+            if (this.progressBar1.Value == 100)
+            {
+                label_kiir.Text = "Hello " + text_szoveg.Text;
+            }
         }
     }
 }
