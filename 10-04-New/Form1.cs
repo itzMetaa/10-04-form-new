@@ -21,5 +21,15 @@ namespace _10_04_New
         {
             //xd
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void rich(object sender, EventArgs e)
+        {
+
+        }
     }
 }
