@@ -12,6 +12,10 @@ namespace _10_04_New
 {
     public partial class Form1 : Form
     {
+        public static int red = 0;
+        public static int green = 0;
+        public static int blue = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -40,6 +44,24 @@ namespace _10_04_New
             {
                 label_kiir.Text = "Hello " + text_szoveg.Text;
             }
+        }
+
+        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
+        {
+            red = (int)numericUpDown3.Value;
+            label4.BackColor = Color.FromArgb(red,green,blue);
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            green = (int)numericUpDown3.Value;
+            label4.BackColor = Color.FromArgb(red, green, blue);
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+            blue = (int)numericUpDown3.Value;
+            label4.BackColor = Color.FromArgb(red, green, blue);
         }
     }
 }
